@@ -1,3 +1,5 @@
+import '../assets/css/Todo.css'
+
 const todoList = [
   {
     id: 1,
@@ -67,11 +69,12 @@ export const Todo = () => {
       {todoList.map((todo) => (
         <div
           key={todo.id}
-          className="text-white mr-1rem mb-1rem p-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded min-w-15rem"
+          className="awesome text-white mr-1rem mb-1rem p-4 to-pink-500 rounded min-w-15rem relative"
         >
           <div>Who: {todo.author}</div>
           <div>Task: {todo.task}</div>
           <div>Priority: {todo.priority}</div>
+          <div className="bg-[url('src/assets/images/bono.png')] w-5rem h-5rem absolute bottom-0 right-0 bg-cover bg-center"></div>
         </div>
       ))}
     </div>

@@ -1,0 +1,20 @@
+.awesome {
+  background: linear-gradient(45deg, #00ffbd, #06baf8);
+  background-size: 400% 400%;
+
+  -webkit-animation: BackgroundGradient 5s ease infinite;
+  -moz-animation: BackgroundGradient 5s ease infinite;
+  animation: BackgroundGradient 5s ease infinite;
+}
+
+@keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
