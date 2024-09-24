@@ -63,14 +63,17 @@ const todoList = [
 
 export const Todo = () => {
   return (
-    <>
+    <div className="flex flex-wrap">
       {todoList.map((todo) => (
-        <div key={todo.id}>
-          <div>{todo.task}</div>
-          <div>{todo.author}</div>
-          <div>{todo.priority}</div>
+        <div
+          key={todo.id}
+          className="text-white mr-1rem mb-1rem p-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded min-w-15rem"
+        >
+          <div>Who: {todo.author}</div>
+          <div>Task: {todo.task}</div>
+          <div>Priority: {todo.priority}</div>
         </div>
       ))}
-    </>
+    </div>
   )
 }
